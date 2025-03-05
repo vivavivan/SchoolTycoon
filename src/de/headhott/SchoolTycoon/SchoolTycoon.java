@@ -1,6 +1,7 @@
 package de.headhott.SchoolTycoon;
 
 import de.headhott.SchoolTycoon.Game.GameController;
+import de.headhott.SchoolTycoon.Game.GameTimer;
 import de.headhott.SchoolTycoon.UI.GUI;
 
 
@@ -9,6 +10,10 @@ public class SchoolTycoon {
         System.out.println("Starting...");
 
         GameController gameController = new GameController("Baden-Württemberg");
-        GUI ui = new GUI(gameController);
+        GameTimer timer = new GameTimer(0, 0);
+        GUI ui = new GUI(gameController, timer);
+
+        timer.setUI(ui);
+        timer.run();
     }
 }
