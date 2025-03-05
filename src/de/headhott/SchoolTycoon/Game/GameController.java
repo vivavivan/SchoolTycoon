@@ -7,7 +7,7 @@ public class GameController {
 
     private int money = 0;
     private String name;
-    ArrayList<Teacher> teachers = new ArrayList<Teacher>();
+    ArrayList<Teacher> teachers = new ArrayList<>();
     public GameController(String name){
         this.name = name;
     }
