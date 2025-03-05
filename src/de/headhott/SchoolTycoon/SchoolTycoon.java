@@ -8,7 +8,7 @@ public class SchoolTycoon {
     public static void main(String[] args) {
         System.out.println("Starting...");
 
-        GameController gameController = new GameController();
+        GameController gameController = new GameController("Baden-Württemberg");
         GUI ui = new GUI(gameController);
     }
 }
