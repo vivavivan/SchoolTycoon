@@ -8,9 +8,6 @@ public class Employee {
     private int exprience;
     private int years;
 
-    public Employee(int salary, int exprience, int year){
-        this.years = year;
-        this.salary = salary;
-        this.exprience = exprience;
+    public Employee(){
     }
 }
