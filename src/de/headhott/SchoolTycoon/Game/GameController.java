@@ -3,8 +3,9 @@ package de.headhott.SchoolTycoon.Game;
 public class GameController {
 
     private int money = 0;
-    public void GameController(){
-
+    private String name;
+    public void GameController(String name){
+        this.name = name;
     }
 
     public void addMoney(){
