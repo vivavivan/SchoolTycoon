@@ -56,6 +56,6 @@ public class GameTimer {
         };
 
         // Schedule the task to run every 5,000 milliseconds (5 seconds for testing, change to 60,000 for real-time minutes)
-        timer.scheduleAtFixedRate(task, 0, 20);
+        timer.scheduleAtFixedRate(task, 0, 5000);
     }
 }
